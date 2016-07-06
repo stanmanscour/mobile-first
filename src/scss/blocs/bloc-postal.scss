@@ -1,0 +1,90 @@
+.bloc-postal {
+	display: flex;
+	flex-direction: column;
+
+	.text-content {
+		display: flex;
+    	height: 131px;
+    	align-items: flex-end;
+	}
+
+	.street-validation {
+		display: flex;
+		flex-direction: column;
+		height: 165px;
+		justify-content: center;
+	}
+
+	.mockup {
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	height: 175px;
+    	width: 250px;
+    	margin: 0 auto;
+
+    	img {
+    		width: 100%;
+    	}
+
+	}
+
+	.sponsors-list ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+
+		li {
+		opacity: 0.3;
+		margin: 0px 30px;
+			img {
+				width: 40px;
+				height: auto;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px){
+		.street-validation {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 140px;
+			width: 40%;
+			margin: 0 auto;
+		}
+
+		.mockup {
+			display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	height: 175px;
+	    	width: 350px;
+	    	margin: 0 auto;
+		}
+
+	}
+
+	@media screen and (min-width: 1150px){
+		.text-content {
+			height: 180px;
+		}
+
+		.mockup {
+			height: 450px;
+			width: 780px;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.sponsors-list ul {
+			height: 70px;
+		}
+	}
+}

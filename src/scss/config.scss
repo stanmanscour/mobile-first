@@ -1,5 +1,50 @@
-//
-$themeColor : blue;
+$lightGrey : #787878;
+$vertMDL : #67d490;
+$grisrequin : #303233;
+$transparentBlanc : rgba(255, 255, 255, 0.94);
+
+* {
+	box-sizing: border-box;
+}
 
 
-//
+h1, p, h2, a {
+	color: $grisrequin;
+	font-family: 'Open sans';
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.hide-mobile {
+	display: none!important;
+}
+
+@media screen and (min-width: 1150px){
+	.hide-mobile {
+		display: flex!important;
+	}
+
+	.hide-desktop {
+		display: none!important;
+	}
+}
+
+
+h2.sub-title {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@media screen and (min-width: 1150px){
+	h2.sub-title {
+		width: 55%;
+		font-size: 30px;
+		line-height: 40px;
+	}
+}

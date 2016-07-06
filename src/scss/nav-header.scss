@@ -1,0 +1,33 @@
+nav.header {
+	padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid $lightGrey;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: $transparentBlanc;
+
+	a {
+		font-size: 15px;
+		text-transform: uppercase;
+		font-family: "Quicksand";
+	}
+
+	span {
+		margin-left: 3px;
+		text-transform: lowercase;
+	}
+
+	@media screen and (min-width: 1150px){
+		.nav-button {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+}

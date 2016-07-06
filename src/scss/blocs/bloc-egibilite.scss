@@ -1,0 +1,55 @@
+.bloc-eligibilite {
+	display: flex;
+	flex-direction: column;
+
+	.text-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+    	height: 100px;
+    	align-items: center;
+	}
+
+	.sous-text-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 90px;
+		text-align: center;
+
+		p {
+			width: 80%;
+    		font-size: 14px;
+   			line-height: 21px;
+    		color: #787878;
+		}
+	}
+
+	.zone-eligible {
+		display: flex;
+		flex-direction: column;
+		height: 165px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 768px){
+		.zone-eligible {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+
+	@media screen and (min-width: 1150px) {
+		.zone-eligible {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 140px;
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+}
